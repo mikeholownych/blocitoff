@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
 
   def create
     @list = List.find(params[:list_id])
-    @item = @list.items.new(item_params)
+    @item = @list.items.build(item_params)
     if @item.save
       flash[:success] = "Added list item."
       redirect_to list_items_path
