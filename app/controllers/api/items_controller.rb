@@ -30,7 +30,7 @@ class Api::ItemsController < ApiController
     @list = List.find(params[:list_id])
     @item = @list.items.find[:id]
     if @item.destroy
-      render json: { head | :ok }
+      render json: { head => :ok }
     else 
       render json: @item.errors, status: :unprocessable_entity
     end
