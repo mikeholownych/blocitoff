@@ -4,7 +4,7 @@ class List < ActiveRecord::Base
 
   validates :title, presence: true, length: { minimum: 3 }
   validates :description, presence: true, length: { minimum: 5 }
-  validates :permissions, presence: true, :inclusion => { :in: => %w(private viewable open) }
+  validates :permissions, presence: true, :inclusion => { :in => %w(private viewable open) }
 
   def self.permission_options
     %w(private viewable open)
