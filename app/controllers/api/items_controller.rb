@@ -27,7 +27,7 @@ class Api::ItemsController < ApiController
     end
   end
   def destroy
-    @list = List.find(params)[:list_id])
+    @list = List.find(params[:list_id])
     @item = @list.items.find[:id]
     if @item.destroy
       render json: { head | :ok }
