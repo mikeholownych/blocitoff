@@ -22,11 +22,13 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda'
   gem 'shoulda-matchers', '~> 2.6.1'
+  gem 'thin'
 end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 group :doc do
