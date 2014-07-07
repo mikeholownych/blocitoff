@@ -1,10 +1,11 @@
 class ListsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_list, only: [:show, :edit, :update, :destroy]
 
   # GET /lists
   # GET /lists.json
   def index
-    @lists = current_user ? current_user.lists : List.all
+    @lists = current_user.lists
   end
 
   # GET /lists/1

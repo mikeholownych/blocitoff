@@ -13,11 +13,12 @@ gem 'faker'
 gem 'devise'
 gem 'figaro'
 gem 'pundit'
+gem 'rest-client'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'database_cleaner'
   gem 'capybara'
   gem 'shoulda'
   gem 'shoulda-matchers', '~> 2.6.1'
