@@ -15,6 +15,7 @@ gem 'figaro'
 gem 'pundit'
 gem 'rest-client'
 gem 'active_model_serializers'
+gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
