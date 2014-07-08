@@ -1,5 +1,5 @@
 class AllSerializer < ActiveModel::Serializer
-  attributes @params
+  attributes :params
 
   def initialize(params={})
     super
